@@ -62,9 +62,9 @@ const Card = (props) => {
         height: 150px;
     `;
 
-    const linkText =  (props.link == undefined) ? "" : "Link";
+    const linkText =  (props.link === undefined) ? "" : "Link";
     
-    const separator = (props.link == undefined) ? "" : "|";
+    const separator = (props.link === undefined) ? "" : "|";
     
     console.log("+"+props.link+"+");
     return (
