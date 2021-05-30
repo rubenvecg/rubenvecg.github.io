@@ -3,88 +3,148 @@ import styled from 'styled-components';
 import IconGroup from '../Icon/IconGroup.js';
 
 
-const Card = (props) => {
+class Card extends React.Component{
 
-    const Container = styled.div`
-        background: #050808;
-        color: #e6e6ea;
-        width: 350px;
-        height: auto;
-        margin: 0 auto 20px;
-        position: relative;
-        padding: 1px 20px 10px;
-        border-radius: 30px;
-        border: 1px solid transparent;
+    constructor(props){
+        super();
+        this.divRef = React.createRef()
+        this.state = {
+            height: '0px'
+        }       
+    }
 
-        -webkit-transition: border 0.5s;
-        transition: border 0.5s;
+    componentDidMount(){
+        this.setState({
+            height: this.divRef.current.clientHeight
+        });       
+    }
 
-        &:hover{
-            border: 1px solid tomato;
-        }
+    render(){
+            const Container = styled.div`
+                color: #e6e6ea;
+                width: 350px;
+                height: auto;
+                margin: 0 auto;
+                position: relative;
+                padding: 1px 20px 10px; 
+                
+                overflow: hidden;
 
-        & h4{
-            margin: 10px;
-        }
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;
 
+                & h4{
+                    margin: 10px;
+                }  
+                
+                &:hover .description-cont{
+                    height: 150px;
+                    overflow: auto;
+                }
+            `;
 
-    `;
+            const Title = styled.h3`
+                padding: 10px;
+                color: tomato; 
+                font-size: 24px;       
+                font-weight: normal;
+            `;
 
-    const imgPath = 'Resources/img/projects/';
-    const Gif = styled.div`
-        width: 300px;
-        height: 200px;
-        margin: 0 auto;        
-        background-image: url(${imgPath + props.imgName}); 
-        background-size: 100% 100%;       
-    `;
+            const imgPath = 'Resources/img/projects/';
+            const Gif = styled.div`
+                width: 350px;
+                height: 233px;
+                margin: 0 auto;        
+                background-image: url(${imgPath + this.props.imgName}); 
+                background-size: 100% 100%; 
+                position: relative;      
+            `;
 
-    const Link = styled.p`
-        text-align: center;
+            const Link = styled.div`
+                width: 100%;
+                height: 100%;
+                -webkit-transition: opacity 0.5s;
+                background: #222;
+                opacity: 0;    
+                
+                &:hover{
+                    opacity: 0.8;
+                }
 
-        & a{
-            color: white;
-            -webkit-transition: color 0.5s;
-            transition: color 0.5s;
-        }
+                & .link-cont{
+                    width: 100%;
+                    height: auto;
 
-        & a:hover{
-            color: tomato;
-        }
-    `;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -12px;
+                }
 
-    const Text = styled.p`
-        text-align: justify; 
-        margin-bottom: 0px;       
-    `;
+                & .link-cont a{
+                    color: white;
+                    opacity: 1;
+                    -webkit-transition: color 0.5s;
+                    transition: color 0.5s;
+                    text-decoration: none; 
+                    font-size: 24px;
+                    font-weight: bold;                                              
+                }
 
-    const DescriptionCont = styled.div`
-        height: 150px;
-    `;
+                & .link-cont a:hover{
+                    color: tomato;
+                }
 
-    const linkText =  (props.link === undefined) ? "" : "Link";
-    
-    const separator = (props.link === undefined) ? "" : "|";
-    
-    console.log("+"+props.link+"+");
-    return (
-        <Container>
-            <h4>{props.title}</h4>
+                
+            `;
 
-            <Gif></Gif> 
-            <Link>
-                <a target='_blank' href={props.link}>{linkText}</a> {separator} <a target='_blank' href={props.source}>Source</a>
-            </Link>
+            const Text = styled.p`
+                text-align: justify; 
+                margin-bottom: 0px; 
+                margin-top: 5px;
+                font-size: 14px;  
+                
+                & b{
+                    color: tomato;
+                }
+            `;          
 
-            <DescriptionCont>
-                <Text> {props.children} </Text>
-            </DescriptionCont>
+            const DescriptionCont = styled.div`
+                margin: 0px auto;
+                padding-right: 10px;
+                height: 0px;
+                overflow: hidden; 
+                transition: height 0.5s;              
+            `;
+            
+            console.log("+"+this.props.link+"+");
+            console.log(this.state.height);
+            return (
+                <div>
+                <Container ref={this.divRef}>
+                    
+                    <Title>{this.props.title}</Title>
 
-            <Text>Made with:</Text>
-            <IconGroup types={props.madeWith} size='32' spacing='5'></IconGroup>
+                    <Gif> 
+                    <Link>                
+                            <div class='link-cont'>
+                                <a target='_blank' href={this.props.link}><h3>Open</h3></a>
+                            </div>                
+                    </Link>
+                    </Gif> 
 
-        </Container>
-    );
+                    <DescriptionCont className='description-cont'>
+                        <Text> {this.props.children} </Text>
+                        <Text>Category: <b>{this.props.category}</b></Text>
+
+                        <Text>Made with:</Text>
+                        <IconGroup types={this.props.madeWith} size='32' spacing='5'></IconGroup>
+                    </DescriptionCont>                            
+                </Container>
+
+                
+                </div>
+            );
+    }
 }
  
 export default Card;

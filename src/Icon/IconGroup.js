@@ -8,7 +8,7 @@ const IconGroup = (props) => {
     const iconsHTML = [];
 
     for(var i = 0; i < icons.length; i++){
-        iconsHTML.push(<Icon type={icons[i]} width={props.size} height={props.size}></Icon>);
+        iconsHTML.push(<Icon key={i.toString()} type={icons[i]} width={props.size} height={props.size}></Icon>);
     }
 
     const Group = styled.div`

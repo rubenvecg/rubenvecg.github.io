@@ -1,7 +1,7 @@
 .App {
   text-align: center; 
   position: relative; 
-  width: 800px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -13,13 +13,25 @@
 }
 
 #header{
-  width: 280px;
-  height: 100vh;  
+  width: 245px;
+  height:100vh;  
+}
+
+
+#about p{
+  text-align: justify;
+  margin: 10px auto;
+}
+
+#about{
+  width: 60%;
+  height: auto;  
 }
 
 #projects{
-  width: 800px;
-  height: 100vh;
+  width: 60%;
+  height: auto; 
+  padding-bottom: 200px;
 }
 
 .page-header{
@@ -31,8 +43,28 @@
   margin: 0px;  
 }
 
+.page-header h3{
+  font-family: 'Poppins', sans-serif; 
+}
 
+#personal-links{
+  margin: 10px auto;
+}
 
+.section{
+  margin: 0 auto;
+}
+
+.section-title{
+  border-top: solid 1px tomato;
+  border-bottom: solid 1px tomato;
+  padding: 10px;  
+  text-align: center;
+}
+
+.description b{
+  color: tomato;
+}
 
 
 
