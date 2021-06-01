@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "title": "CTP Portable Website",
+      "category": "Web Development",
+      "description": "As part of the ctpHomeHacks hackathon, I collaborated with our team's UX designer to develop this landing page for a task management app we proposed. We wanted to make the site as fun and lively as possible with  different animated elements.",
+      "madeWith": "react",
+      "link": "https://ctp-portable.netlify.app/",
+      "thumbnail": "ctp-portable.gif",
+      "images": []
+    },
+    {
+      "title": "NYC Data Visualization Project",
+      "category": "Data Science",
+      "description": "As part of a research project for my PHYS 1002ID class (Introduction to Physics of Natural Disasters), I developed this heatmap showing the percentage of buildings constructed before 1995 by school districts in New York City. I merged datasets from the NYC Departments of Buildings and City Planning to ensure a total of 1,073,550 buildings to study.",
+      "madeWith": "python",
+      "link": "https://www.kaggle.com/rubenvecino/distribution-of-buildings-from-before-1995-in-nyc",
+      "thumbnail": "heatmap.png",
+      "images": []
+    },
+    {
+      "title": "HSL-RGB Color Picker",
+      "category": "Web Development",
+      "description": "This front-end only tool allows to preview, save, edit and remove color references. Sliders adjust their colors dynamically so the user gets an idea of how the color will look.",
+      "madeWith": "html css js",
+      "link": "https://rubenvecg.github.io/color-picker",
+      "thumbnail": "color-picker.gif",
+      "images": []
+    },
+    {
+      "title": "Responsive Gym Website",
+      "category": "Web Development",
+      "description": "As the final project for my CST 2309 (Web Development) class on Fall 2019, I developed this responsive site using Bootstrap and CSS media queries, as well as native HTML, CSS and Javascript.",
+      "madeWith": "html css js bootstrap",
+      "link": "https://rubenvecg.github.io/gym-site",
+      "thumbnail": "gym-site.gif",
+      "images": []
+    },
+    {
+      "title": "Minesweeper",
+      "category": "Game Development",
+      "description": "I enjoy rebuilding classic games and learning the logic behind them. I implemented the flood fill algorithm to reveal all empty cells around the one selected by the player.",
+      "madeWith": "java",
+      "link": "https://github.com/rubenvecg/Minesweeper-Java",
+      "thumbnail": "minesweeper.gif",
+      "images": []
+    }
+  ]
+}

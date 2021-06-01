@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import IconGroup from '../Icon/IconGroup.js';
 
-
 class Card extends React.Component{
 
     constructor(props){
@@ -18,9 +17,8 @@ class Card extends React.Component{
             height: this.divRef.current.clientHeight
         });       
     }
-
-    render(){
-            const Container = styled.div`
+    render(){ 
+        const Container = styled.div`
                 color: #e6e6ea;
                 width: 350px;
                 height: auto;
@@ -114,36 +112,31 @@ class Card extends React.Component{
                 height: 0px;
                 overflow: hidden; 
                 transition: height 0.5s;              
-            `;
-            
-            console.log("+"+this.props.link+"+");
-            console.log(this.state.height);
-            return (
-                <div>
-                <Container ref={this.divRef}>
-                    
-                    <Title>{this.props.title}</Title>
-
-                    <Gif> 
-                    <Link>                
-                            <div class='link-cont'>
-                                <a target='_blank' href={this.props.link}><h3>Open</h3></a>
-                            </div>                
-                    </Link>
-                    </Gif> 
-
-                    <DescriptionCont className='description-cont'>
-                        <Text> {this.props.children} </Text>
-                        <Text>Category: <b>{this.props.category}</b></Text>
-
-                        <Text>Made with:</Text>
-                        <IconGroup types={this.props.madeWith} size='32' spacing='5'></IconGroup>
-                    </DescriptionCont>                            
-                </Container>
-
+            `;           
+        return (
+            <div>
+            <Container ref={this.divRef}>
                 
-                </div>
-            );
+                <Title>{this.props.title}</Title>
+
+                <Gif> 
+                <Link>                
+                        <div class='link-cont'>
+                            <a target='_blank' href={this.props.link}><h3>Open</h3></a>
+                        </div>                
+                </Link>
+                </Gif> 
+
+                <DescriptionCont className='description-cont'>
+                    <Text> {this.props.children} </Text>
+                    <Text>Category: <b>{this.props.category}</b></Text>
+
+                    <Text>Made with:</Text>
+                    <IconGroup types={this.props.madeWith} size='32' spacing='5'></IconGroup>
+                </DescriptionCont>                            
+            </Container>            
+            </div>
+        );
     }
 }
  

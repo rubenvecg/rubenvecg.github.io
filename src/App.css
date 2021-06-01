@@ -9,29 +9,13 @@
 .container{
   margin: 0 auto;
   display: flex;
-  align-items: center;    
+  flex-direction: column;
+  justify-content: center;    
 }
 
 #header{
   width: 245px;
   height:100vh;  
-}
-
-
-#about p{
-  text-align: justify;
-  margin: 10px auto;
-}
-
-#about{
-  width: 60%;
-  height: auto;  
-}
-
-#projects{
-  width: 60%;
-  height: auto; 
-  padding-bottom: 200px;
 }
 
 .page-header{
@@ -49,21 +33,6 @@
 
 #personal-links{
   margin: 10px auto;
-}
-
-.section{
-  margin: 0 auto;
-}
-
-.section-title{
-  border-top: solid 1px tomato;
-  border-bottom: solid 1px tomato;
-  padding: 10px;  
-  text-align: center;
-}
-
-.description b{
-  color: tomato;
 }
 
 

@@ -1,0 +1,31 @@
+.section{
+    margin: 0 auto;
+}
+  
+.section-title{
+    border-top: solid 1px tomato;
+    border-bottom: solid 1px tomato;
+    padding: 10px;  
+    text-align: center;
+}
+
+#about p{
+    text-align: justify;
+    margin: 10px auto;
+}
+  
+#about{
+    width: 60%;
+    height: auto;  
+}
+
+#projects{
+    width: 60%;
+    height: auto; 
+    padding-bottom: 200px;
+}
+
+.description b{
+    color: tomato;
+}
+  
