@@ -8,21 +8,20 @@ class Collection extends React.Component {
     }
 
     render(){
-            const Container = styled.div`
-                margin: 0 auto;
-                padding-top: 10px;
-                display: grid;                
-                grid-gap: 10px;
-                justify-content: center;
-                align-items: start;
-                width: 100%;
-
-                @media only screen and (min-width: 800px) {
-                    & {
-                        grid-template-columns: repeat(2, 350px);
-                    }
-                }
-             `;            
+        const Container = styled.div`
+            margin: 0 auto;
+            padding-top: 10px;
+            display: flex;                
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: start;
+            width: 800px;  
+            
+            @media only screen and (max-width: 800px) {
+                width: 300px;
+            }
+            `;            
 
         return ( 
             <Container>

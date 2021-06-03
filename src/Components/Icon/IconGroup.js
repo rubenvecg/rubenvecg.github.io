@@ -21,7 +21,7 @@ const IconGroup = (props) => {
     `;
 
     return (
-        <Group>{iconsHTML}</Group>
+        <Group className={props.className}>{iconsHTML}</Group>
     );
 }
  

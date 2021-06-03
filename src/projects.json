@@ -6,7 +6,7 @@
       "description": "As part of the ctpHomeHacks hackathon, I collaborated with our team's UX designer to develop this landing page for a task management app we proposed. We wanted to make the site as fun and lively as possible with  different animated elements.",
       "madeWith": "react",
       "link": "https://ctp-portable.netlify.app/",
-      "thumbnail": "ctp-portable.gif",
+      "thumbnail": "ctp-portable.png",
       "images": []
     },
     {
@@ -24,7 +24,7 @@
       "description": "This front-end only tool allows to preview, save, edit and remove color references. Sliders adjust their colors dynamically so the user gets an idea of how the color will look.",
       "madeWith": "html css js",
       "link": "https://rubenvecg.github.io/color-picker",
-      "thumbnail": "color-picker.gif",
+      "thumbnail": "color-picker.png",
       "images": []
     },
     {
@@ -33,7 +33,7 @@
       "description": "As the final project for my CST 2309 (Web Development) class on Fall 2019, I developed this responsive site using Bootstrap and CSS media queries, as well as native HTML, CSS and Javascript.",
       "madeWith": "html css js bootstrap",
       "link": "https://rubenvecg.github.io/gym-site",
-      "thumbnail": "gym-site.gif",
+      "thumbnail": "gym-site.png",
       "images": []
     },
     {
@@ -42,7 +42,7 @@
       "description": "I enjoy rebuilding classic games and learning the logic behind them. I implemented the flood fill algorithm to reveal all empty cells around the one selected by the player.",
       "madeWith": "java",
       "link": "https://github.com/rubenvecg/Minesweeper-Java",
-      "thumbnail": "minesweeper.gif",
+      "thumbnail": "minesweeper.png",
       "images": []
     }
   ]

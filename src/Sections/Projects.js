@@ -28,7 +28,7 @@ const Projects = () => {
 
             <Collection> 
                 {Cards(projects['items'])}          
-            </Collection> 
+            </Collection>
         </div>           
     );
 }
