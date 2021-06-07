@@ -48,18 +48,6 @@ export const Link = styled.div`
     &:hover{
         background: hsla(0, 0%, 13%, 0);
     }
-
-    & a{
-        color: white;
-        -webkit-transition: color 0.5s;
-        transition: color 0.5s;
-        text-decoration: none; 
-        font-size: 24px;                                             
-    }
-
-    & a:hover{
-        color: tomato;
-    }
 `;
 
 export const Title = styled.h3`
@@ -97,9 +85,11 @@ export const DescriptionWindow = styled.div`
 
 export const DescriptionPanel = styled.div`
     background: #222;
+    display: flex;
+    flex-direction: column;
     width: 350px;
-    height: 80vh;
-    padding: 30px;
+    height: auto;
+    padding: 20px 30px 5px 30px;
     position: relative;
 `
 
@@ -111,11 +101,4 @@ export const IconCont = styled.div`
     & .made-with{
        margin: 0;
     }
-`
-
-export const Slides = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 `

@@ -10,7 +10,8 @@ const Projects = () => {
         content.forEach(c => {
             cards.push(
                 <Card title={c['title']}
-                      imgName={c['thumbnail']} 
+                      thumbnail={c['thumbnail']} 
+                      screenshots={c['screenshots']}
                       madeWith={c['madeWith']}
                       link={c['link']}
                       category={c['category']}>

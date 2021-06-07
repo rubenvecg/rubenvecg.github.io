@@ -7,7 +7,7 @@
       "madeWith": "react",
       "link": "https://ctp-portable.netlify.app/",
       "thumbnail": "ctp-portable.png",
-      "images": []
+      "screenshots": ["ctp-portable-1.png", "ctp-portable-2.png", "ctp-portable-3.png"]
     },
     {
       "title": "NYC Data Visualization Project",
@@ -16,7 +16,7 @@
       "madeWith": "python",
       "link": "https://www.kaggle.com/rubenvecino/distribution-of-buildings-from-before-1995-in-nyc",
       "thumbnail": "heatmap.png",
-      "images": []
+      "screenshots": ["heatmap-1.png"]
     },
     {
       "title": "HSL-RGB Color Picker",
@@ -25,7 +25,7 @@
       "madeWith": "html css js",
       "link": "https://rubenvecg.github.io/color-picker",
       "thumbnail": "color-picker.png",
-      "images": []
+      "screenshots": ["color-picker-1.png", "color-picker-2.png", "color-picker-3.png"]
     },
     {
       "title": "Responsive Gym Website",
@@ -34,7 +34,7 @@
       "madeWith": "html css js bootstrap",
       "link": "https://rubenvecg.github.io/gym-site",
       "thumbnail": "gym-site.png",
-      "images": []
+      "screenshots": ["gym-site-1.png", "gym-site-2.png"]
     },
     {
       "title": "Minesweeper",
@@ -43,7 +43,7 @@
       "madeWith": "java",
       "link": "https://github.com/rubenvecg/Minesweeper-Java",
       "thumbnail": "minesweeper.png",
-      "images": []
+      "screenshots": ["minesweeper-1.png"]
     }
   ]
 }
