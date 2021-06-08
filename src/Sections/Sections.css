@@ -14,18 +14,28 @@
     margin: 10px auto;
 }
   
-#about{
-    width: 60%;
+#about, #projects{
+    width: 800px;
     height: auto;  
 }
 
-#projects{
-    width: 60%;
-    height: auto; 
+#projects{ 
     padding-bottom: 50px;
 }
 
 .description b{
     color: tomato;
+}
+
+@media only screen and (max-width: 800px) {
+    #about, #projects{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #about, #projects{
+        width: 300px;
+    }
 }
   
