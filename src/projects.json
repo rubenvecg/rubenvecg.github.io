@@ -1,6 +1,23 @@
 {
   "items": [
     {
+      "title": "NYC Crime View",
+      "category": "Data Visualization",
+      "description": "NYC Crime View is a visualization app containing crime data retrieved from the New York City Police Department between 2006 and 2020 across different city jurisdictions. We worked with a dataset with over 5 million entries containing the location of the crime, type of crime and perpetrator descriptions.",
+      "madeWith": "react d3 python",
+      "link": "https://nyc-crimeview.netlify.app/",
+      "thumbnail": "crime-view.png",
+      "screenshots": ["crime-view-1.png", "crime-view-2.png", "crime-view-3.png", "crime-view-4.png"]
+    },
+    {
+      "title": "MTA Bus Viz",
+      "category": "Data Visualization",
+      "description": "As an intern at MTA, I developed an API that retrieves historical, spatial bus data from various, internal databases. I also developed a map application that would use the API to visualize such data through different layers. Based on a given bus route and date, the app enables the user to view the data based on the layers of interest, bus direction, and time range. It also allows to visualize data based on a specific trip.",
+      "madeWith": "nodejs js pg ol react",
+      "thumbnail": "mta.png",
+      "screenshots": ["mta-1.png", "mta-2.png", "mta-3.png", "mta-4.png"]
+    },
+    {
       "title": "CTP Portable Website",
       "category": "Web Development",
       "description": "As part of the ctpHomeHacks hackathon, I collaborated with our team's UX designer to develop this landing page for a task management app we proposed. We wanted to make the site as fun and lively as possible with  different animated elements.",

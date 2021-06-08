@@ -35,7 +35,7 @@ const Description = (props) => {
                     <IconGroup className='made-with' types={props.madeWith} size='32' spacing='5'></IconGroup>
                 </IconCont>
 
-                <a target='_blank' href={props.link}>Open</a>
+                {props.link && <a target='_blank' href={props.link}>Open</a>}
             </DescriptionPanel>  
         </DescriptionWindow>
     );
